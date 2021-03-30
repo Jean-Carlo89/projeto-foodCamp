@@ -125,6 +125,41 @@ li p{
     font-weight: 300;
 }
 
+.ultima-lista{
+    margin-bottom: 108px; /*16 + 92 do botao fixed embaixo*/
+    
+}
 
 
+/*--------------------------------Botão de enviar---
+-------------------------------*/
+
+#container-botao{
+    width: 100%;
+    height: 92px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+
+}
+
+#concluir-pedido{
+    width: 95%;
+    height: 61px;
+    border-radius: 50px;
+    background: #CBCBCB;
+    border: none;
+    color: white;
+    
+}
+
+#concluir-pedido span{
+    width: 196px;
+    height: 40px;
+    
+    font-size: 20px;
+}
 
