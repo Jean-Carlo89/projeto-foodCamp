@@ -51,6 +51,22 @@ top: 0px;
     margin-bottom: 17px;*/
 }
 
+
+.bordinha{
+    border: 5px solid green;
+    
+}
+
+.check{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    /*border: 1px solid blueviolet;*/
+    color: green;
+    width: 25px;
+    height: 25px;
+}
+
 h2{
     font-size: 26px;
     font-family: Righteous;
@@ -79,6 +95,7 @@ li{
     
     
     border: 1px solid red;
+    position: relative;
     
 }
 
