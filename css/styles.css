@@ -13,7 +13,7 @@ body{
 }
 
 
-#topo{
+.topo{
 width: 100%;
 background-color: #CF2B2B;
 display :flex;
@@ -26,7 +26,7 @@ position: fixed;
 top: 0px;
 z-index: 89;
 }
-#topo h1{
+.topo h1{
     font-size: 44px;
     font-family: Righteous;
     color: white;
@@ -34,7 +34,7 @@ z-index: 89;
     
 }
 
-#topo p{
+.topo p{
     font-size: 18px;
     color: white;
     font-family: Roboto;
@@ -44,7 +44,7 @@ z-index: 89;
 
 /*------------------Conteudo principal----
 ---------------------------------------------*/
-#primeiro-h2{
+.primeiro-h2{
      margin-top: 125px;
     
     /*margin-top: 123px; altura do topo fixado + margin ao topo
@@ -152,7 +152,7 @@ li p{
 /*--------------------------------Botão de enviar---
 -------------------------------*/
 
-#container-botao{
+.container-botao{
     width: 100%;
     height: 92px;
     background: white;
@@ -164,7 +164,7 @@ li p{
 
 }
 
-#concluir-pedido{
+.concluir-pedido{
     width: 95%;
     height: 61px;
     border-radius: 50px;
@@ -174,7 +174,7 @@ li p{
     
 }
 
-#concluir-pedido span{
+.concluir-pedido span{
     width: 196px;
     height: 40px;
     
