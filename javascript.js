@@ -133,9 +133,14 @@ function checarBotao(){
         let botao = document.querySelector('.concluir-pedido')
         botao.classList.add('botaoverde')
         botao.innerHTML="Fechar Pedido"
+        let link = document.querySelector(".estilo-link");
+        link.href="https://wa.me/5571992079633?text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20o%20pedido%3A "
     }else{
         let botao = document.querySelector('.concluir-pedido')
         botao.classList.remove('botaoverde')
+        
+        botao.innerHTML="Selecione os 3 itens <br>para fechar o pedido"
     }
 }
+
 

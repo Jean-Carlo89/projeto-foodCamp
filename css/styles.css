@@ -166,14 +166,19 @@ li p{
     background: #CBCBCB;
     border: none;
     color: white;
-    
+    font-size: 20px;
+}
+
+.estilo-link{
+    width: 95%;
+    height: 61px;
 }
 
 .concluir-pedido span{
     width: 196px;
     height: 40px;
-    
     font-size: 20px;
+
 }
 
 /*----------------Classes do js------*/
