@@ -55,7 +55,6 @@ z-index: 89;
 
 .bordinha{
     border: 5px solid green;
-    
 }
 
 .check{
@@ -63,7 +62,7 @@ z-index: 89;
     bottom: 5px;
     right: 5px;
     /*border: 1px solid blueviolet;*/
-    color: green;
+    color: #32B72F;
     width: 25px;
     height: 25px;
 }
@@ -90,16 +89,11 @@ li{
     border-radius: 9px;
     margin-right: 16px;
     display: flex;
-    
     align-items: center;
     justify-content: center;
     min-width: 172px;
-    
-    
-    border: 1px solid red;
     position: relative;
-    
-}
+    }
 
 li:first-child{
     margin-left: 20px;
