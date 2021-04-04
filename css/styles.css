@@ -171,7 +171,7 @@ li p{
 }
 
 .estilo-link{
-    width: 95%;
+    
     height: 61px;
 }
 
@@ -222,7 +222,8 @@ li p{
     font-family:Roboto;
     font-size: 22px;
     color: white;
-    margin: 21px 0 0 0;
+    
+    
 }
 
 .textos-confirmacao{
@@ -237,12 +238,13 @@ li p{
 }
 
 .textos-confirmacao.primeiro{
-    margin-top :28px;
+    margin-top :20px;
 }
 
 .cancelar{
     font-size: 22px;
     color: white;
+    margin-top: 5px;
 }
 
 .tudocerto{
@@ -255,4 +257,5 @@ li p{
     border: none;
     font-family: Roboto;
     margin-bottom: 20px;
+    
 }
