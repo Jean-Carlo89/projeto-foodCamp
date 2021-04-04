@@ -221,7 +221,7 @@ function checarBotao(){
 }
 
 function codificar(){
-    var uri = "Olá, gostaria de fazer o pedido:"  +'\n- Prato: '+ prato  + '\n- Bebida: ' + bebida +'\n- Sobremesa: ' + sobremesa  + '\nTotal: R$ ' + precoTotal + '\nNome: ' + nome + '\nEndereço ' + endereco;
+    var uri = "Olá, gostaria de fazer o pedido:"  +'\n- Prato: '+ prato  + '\n- Bebida: ' + bebida +'\n- Sobremesa: ' + sobremesa  + '\nTotal: R$ ' + precoTotal + '\nNome: ' + nome + '\nEndereço: ' + endereco;
     var res = encodeURIComponent(uri);
     
     var uri_dec = decodeURIComponent(res);
