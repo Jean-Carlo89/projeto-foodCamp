@@ -185,8 +185,31 @@
     </ul><!-- fim da lista 3-->
 
     <div class="container-botao"><!-- Inicio botão-->
-        <a href="" class="estilo-link"><button class="concluir-pedido" ><span>Selecione os 3 itens <br>para fechar o pedido</span></button></a>
+        <button class="concluir-pedido" onclick="confirmarPedido()" ><span>Selecione os 3 itens <br>para fechar o pedido</span></button>
     </div><!-- Fim botão-->
+
+    <div id="tela-confirmacao" class="esconder">
+        <div class="confirmar-pedido">
+            <h2>Confirme Seu pedido</h2>
+            <div class="textos-confirmacao primeiro">
+                <span class="confirmacao-comida"></span><span class="preco-comida"></span>
+            </div>
+            <div class="textos-confirmacao">
+                <span class="confirmacao-bebida"></span><span class="preco-bebida"></span>
+            </div>
+            <div class="textos-confirmacao">
+                <span class="confirmacao-sobremesa"></span><span class="preco-sobremesa"></span>
+            </div>
+            <div class="textos-confirmacao">
+                <span class="confirmacao-total"></span><span class="preco-total"></span>
+            </div> 
+            
+           <a href="" class="estilo-link"> <button class="tudocerto">Tudo certo, pode pedir!</button></a>
+            <div class="cancelar" onclick="cancelarPedido()">Cancelar</div>
+
+           
+        </div> 
+    </div>
     
     <script src="javascript.js"></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>

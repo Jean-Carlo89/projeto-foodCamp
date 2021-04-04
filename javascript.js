@@ -7,6 +7,8 @@ let bebida;
 let sobremesa;
 let precoComida;
 let precoTotal;
+let nome;
+let endereco;
 
 function escolherPrato(classeComida, posicaoCheck){
     escolheucomida = true
@@ -186,29 +188,28 @@ function checarBotao(){
         let botao = document.querySelector('.concluir-pedido')
         botao.classList.add('botaoverde')
         botao.innerHTML="Fechar Pedido"
-        let link = document.querySelector(".estilo-link");
+        /*let link = document.querySelector(".estilo-link");*/
         
         /*------------------------Pegando informações da pagina--------*/
-        console.log(prato)
+       /* console.log(prato)
         console.log(precoComida)
 
         console.log(bebida)
         console.log(precoBebida)
 
         console.log(sobremesa)
-        console.log(precoSobremesa)
+        console.log(precoSobremesa)*/
         
         precoComida = parseFloat(precoComida)
         precoBebida = parseFloat(precoBebida)
         precoSobremesa = parseFloat(precoSobremesa)
 
          precoTotal = precoSobremesa + precoComida + precoBebida
-        console.log(precoTotal)
+        /*console.log(precoTotal)*/
         precoTotal = precoTotal.toFixed(2)
-        console.log(precoTotal)
+       /* console.log(precoTotal)*/
         /*---------------------------------------*/
-        codificar()
-
+        
 
         
     }else{
@@ -220,7 +221,7 @@ function checarBotao(){
 }
 
 function codificar(){
-    var uri = "Olá, gostaria de fazer o pedido:"  +'\n- Prato: '+ prato  + '\n- Bebida: ' + bebida +'\n- Sobremesa: ' + sobremesa  + '\nTotal: R$ ' + precoTotal;
+    var uri = "Olá, gostaria de fazer o pedido:"  +'\n- Prato: '+ prato  + '\n- Bebida: ' + bebida +'\n- Sobremesa: ' + sobremesa  + '\nTotal: R$ ' + precoTotal + '\nNome: ' + nome + '\nEndereço ' + endereco;
     var res = encodeURIComponent(uri);
     
     var uri_dec = decodeURIComponent(res);
@@ -228,7 +229,54 @@ function codificar(){
 
     let link = document.querySelector(".estilo-link");
     link.href="https://wa.me/5571992079633?text="+res
-    console.log(link.href)
+    /*console.log(link.href)*/
+}
+
+function confirmarPedido(){
+   nome = prompt('Qual é o seu nome?')
+   endereco = prompt('Digite seu endereço')
+    const ativarTela = document.getElementById('tela-confirmacao')
+   ativarTela.classList.add('branco')
+    
+   precoComida = precoComida.toFixed(2)
+   precoBebida = precoBebida.toFixed(2)
+   precoSobremesa = precoSobremesa.toFixed(2)
+       /* console.log(prato)
+        console.log(precoComida)
+
+        console.log(bebida)
+        console.log(precoBebida)
+
+        console.log(sobremesa)
+        console.log(precoSobremesa)*/
+    const p = document.querySelector('.confirmacao-comida')
+    p.innerText = prato
+    const ppreco = document.querySelector('.preco-comida')
+    ppreco.innerText = precoComida
+
+    const b = document.querySelector('.confirmacao-bebida')
+    b.innerText = bebida
+    const bpreco = document.querySelector('.preco-bebida')
+    bpreco.innerText = precoBebida
+
+    const s = document.querySelector('.confirmacao-sobremesa')
+    s.innerText = sobremesa
+    const spreco = document.querySelector('.preco-sobremesa')
+    spreco.innerText = precoSobremesa
+
+    const t = document.querySelector('.confirmacao-total')
+    t.innerText = "Total"
+    const tpreco = document.querySelector('.preco-total')
+    tpreco.innerText = precoTotal
+
+    codificar()
+
+}
+
+
+function cancelarPedido(){
+   const desativarTela = document.getElementById('tela-confirmacao')
+   desativarTela.classList.remove('branco')
 }
 
 
