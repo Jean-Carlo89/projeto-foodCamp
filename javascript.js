@@ -225,7 +225,7 @@ function codificar(){
     var res = encodeURIComponent(uri);
     
     var uri_dec = decodeURIComponent(res);
-    console.log(uri_dec)
+    /*console.log(uri_dec)*/
 
     let link = document.querySelector(".estilo-link");
     link.href="https://wa.me/5571992079633?text="+res
@@ -268,6 +268,7 @@ function confirmarPedido(){
     t.innerText = "Total"
     const tpreco = document.querySelector('.preco-total')
     tpreco.innerText ='R$ ' + precoTotal
+    /*console.log(typeof(precoTotal))*/
 
     codificar()
 
