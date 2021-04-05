@@ -267,7 +267,7 @@ function confirmarPedido(){
     const t = document.querySelector('.confirmacao-total')
     t.innerText = "Total"
     const tpreco = document.querySelector('.preco-total')
-    tpreco.innerText = precoTotal
+    tpreco.innerText ='R$ ' + precoTotal
 
     codificar()
 
